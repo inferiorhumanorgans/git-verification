@@ -1,0 +1,11 @@
+[package]
+name = "git-status"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+git-repository = { path = "../gitoxide/git-repository", features = [ "git-index" ] }
+lzma-rs = "0.2"
+tempfile = "3"
+tar = "0.4"
